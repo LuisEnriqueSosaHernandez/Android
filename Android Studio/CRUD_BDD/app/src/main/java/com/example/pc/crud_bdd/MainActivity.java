@@ -48,20 +48,52 @@ public class MainActivity extends AppCompatActivity {
 // Insert the new row, returning the primary key value of the new row
                 long newRowId = db.insert(Estructura_BDDO.TABLE_NAME, null, values);
                 Toast.makeText(getApplicationContext(),"Se guardo el registro: "+newRowId,Toast.LENGTH_SHORT).show();
+
+                textoId.setText("");
+                textoNombre.setText("");
+                textoApellidos.setText("");
             }
         });
         botonActualizar.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
+                SQLiteDatabase db = helper.getWritableDatabase();
 
+// New value for one column
+                ContentValues values = new ContentValues();
+                values.put(Estructura_BDDO.NOMBRE_COLUMNA2, textoNombre.getText().toString());
+                values.put(Estructura_BDDO.NOMBRE_COLUMNA3, textoApellidos.getText().toString());
+// Which row to update, based on the title
+                String selection = Estructura_BDDO.NOMBRE_COLUMNA1 + " LIKE ?";
+                String[] selectionArgs = { textoId.getText().toString() };
+
+                int count = db.update(
+                        Estructura_BDDO.TABLE_NAME,
+                        values,
+                        selection,
+                        selectionArgs);
+                Toast.makeText(getApplicationContext(),"Se actualizo el registro: "+textoId.getText().toString(),Toast.LENGTH_SHORT).show();
+                textoNombre.setText("");
+                textoApellidos.setText("");
             }
+
         });
         botonBorrar.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-
+                SQLiteDatabase db = helper.getWritableDatabase();
+                // Define 'where' part of query.
+                String selection = Estructura_BDDO.NOMBRE_COLUMNA1 + " LIKE ?";
+// Specify arguments in placeholder order.
+                String[] selectionArgs = { textoId.getText().toString() };
+// Issue SQL statement.
+                db.delete(Estructura_BDDO.TABLE_NAME, selection, selectionArgs);
+                Toast.makeText(getApplicationContext(),"Se borro el registro: "+textoId.getText().toString(),Toast.LENGTH_SHORT).show();
+                textoId.setText("");
+                textoNombre.setText("");
+                textoApellidos.setText("");
             }
         });
         botonBuscar.setOnClickListener(new View.OnClickListener(){
@@ -85,21 +117,24 @@ public class MainActivity extends AppCompatActivity {
 // How you want the results sorted in the resulting Cursor
                 /*String sortOrder =
                         FeedEntry.COLUMN_NAME_SUBTITLE + " DESC";*/
+                try {
+                    Cursor c = db.query(
+                            Estructura_BDDO.TABLE_NAME,                     // The table to query
+                            projection,                               // The columns to return
+                            selection,                                // The columns for the WHERE clause
+                            selectionArgs,                            // The values for the WHERE clause
+                            null,                                     // don't group the rows
+                            null,                                     // don't filter by row groups
+                            null                                 // The sort order
+                    );
 
-                Cursor c = db.query(
-                        Estructura_BDDO.TABLE_NAME,                     // The table to query
-                        projection,                               // The columns to return
-                        selection,                                // The columns for the WHERE clause
-                        selectionArgs,                            // The values for the WHERE clause
-                        null,                                     // don't group the rows
-                        null,                                     // don't filter by row groups
-                        null                                 // The sort order
-                );
+                    c.moveToFirst();
 
-                c.moveToFirst();
-
-                textoNombre.setText(c.getString(0));
-                textoApellidos.setText(c.getString(1));
+                    textoNombre.setText(c.getString(0));
+                    textoApellidos.setText(c.getString(1));
+                }catch (Exception e){
+                    Toast.makeText(getApplicationContext(),"No se encontro el registro "+textoId.getText().toString(),Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
