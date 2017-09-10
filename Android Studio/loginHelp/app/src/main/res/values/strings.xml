@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">loginHelp</string>
+    <string name="entrar">Entrar</string>
+    <string name="recordar">Recordar</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+</resources>
