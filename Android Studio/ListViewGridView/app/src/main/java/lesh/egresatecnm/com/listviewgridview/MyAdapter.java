@@ -48,7 +48,7 @@ public class MyAdapter extends BaseAdapter {
         if(convertView==null){
             //Inflamos la vista que nos ha llegado con nuestro layout personalizado
             LayoutInflater layoutInflater=LayoutInflater.from(this.context);
-            convertView=layoutInflater.inflate(R.layout.listview,null);
+            convertView=layoutInflater.inflate(this.layout,null);
             holder=new ViewHolder();
             //Referenciamos el evento a modificar y lo rellenamos
             holder.nameTextView=(TextView)convertView.findViewById(R.id.nombres);
