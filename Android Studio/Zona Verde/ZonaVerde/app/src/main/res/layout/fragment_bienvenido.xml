@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lesh.zonaverde.FragmentsRegistro.BienvenidoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorFondo"
+        android:fontFamily="@font/love_ya_like_a_sister"
+        android:text="@string/bienvenido"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bienvenidoButton"
+       style="@style/boton"
+        android:text="@string/continuar" />
+
+</FrameLayout>

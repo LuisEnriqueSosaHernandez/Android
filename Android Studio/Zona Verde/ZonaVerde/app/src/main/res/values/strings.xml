@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Zona Verde</string>
+    <string name="facebook_app_id">2170813843149479</string>
+    <string name="fb_login_protocol_scheme">fb2170813843149479</string>
+    <string name="cancelado">Acción cancelada</string>
+    <string name="error">Ha ocurrido un error</string>
+    <string name="erroremail">Tu correo es requerido</string>
+    <string name="sesioncerrada">Cerrando sesión</string>
+    <string name="bienvenido">Bienvenido a Zona Verde</string>
+    <string name="continuar">Continuar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Green Zone</string>
+    <string name="cancelado">Canceled action</string>
+    <string name="error">An error has occurred</string>
+    <string name="erroremail">Your email is required</string>
+    <string name="sesioncerrada">Closing session</string>
+    <string name="bienvenido">Welcome to Green Zone</string>
+    <string name="continuar">Next</string>
+
+</resources>

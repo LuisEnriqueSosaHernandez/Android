@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="boton">
+        <item name="android:fontFamily">@font/love_ya_like_a_sister</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/colorFondo</item>
+        <item name="android:background">@color/colorFondoIcono</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

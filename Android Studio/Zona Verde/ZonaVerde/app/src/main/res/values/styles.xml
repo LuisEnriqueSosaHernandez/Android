@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorFondoIcono</item>
+        <item name="colorPrimaryDark">@color/colorFondoIcono</item>
+        <item name="colorAccent">@color/colorFondoIcono</item>
+    </style>
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorFondoIcono</item>
+            <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+    <style name="boton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/colorFondo</item>
+        <item name="android:background">@color/colorFondoIcono</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>
