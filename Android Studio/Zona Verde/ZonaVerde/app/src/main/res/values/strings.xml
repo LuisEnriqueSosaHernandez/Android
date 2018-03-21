@@ -8,6 +8,8 @@
     <string name="sesioncerrada">Cerrando sesión</string>
     <string name="bienvenido">Bienvenido a Zona Verde</string>
     <string name="continuar">Continuar</string>
+    <string name="no">Ahora no</string>
+    <string name="ultimo">Finalizar</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

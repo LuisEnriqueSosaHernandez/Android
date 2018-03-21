@@ -1,0 +1,10 @@
+insert into climas values(null,'Ecuatorial');
+insert into climas values(null,'Tropical');
+insert into climas values(null,'Subtropical árido');
+insert into climas values(null,'Desértico y semidesértico');
+insert into climas values(null,'Subtropical húmedo');
+insert into climas values(null,'Clima mediterráneo');
+insert into climas values(null,'Clima oceánico');
+insert into climas values(null,'Clima continental');
+insert into climas values(null,'Climas polares');
+insert into climas values(null,'Clima de montaña');

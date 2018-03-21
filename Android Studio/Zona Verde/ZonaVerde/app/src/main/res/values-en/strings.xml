@@ -7,5 +7,7 @@
     <string name="sesioncerrada">Closing session</string>
     <string name="bienvenido">Welcome to Green Zone</string>
     <string name="continuar">Next</string>
+    <string name="no">Not now</string>
+    <string name="ultimo">Finalize</string>
 
 </resources>

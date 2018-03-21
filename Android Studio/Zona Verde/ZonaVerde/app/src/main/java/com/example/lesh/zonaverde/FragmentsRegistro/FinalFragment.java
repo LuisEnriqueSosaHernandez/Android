@@ -15,11 +15,12 @@ import com.example.lesh.zonaverde.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BienvenidoFragment extends Fragment {
-private Button bienvenidoButton;
-private EscuchandoPaginas callback;
+public class FinalFragment extends Fragment {
+    //Variables globales
+    private Button finalButton;
+    private EscuchandoPaginas callback;
 
-    public BienvenidoFragment() {
+    public FinalFragment() {
         // Required empty public constructor
     }
     //Metodo que se ejecuta al principio de todo
@@ -28,22 +29,24 @@ private EscuchandoPaginas callback;
         super.onAttach(context);
         try{
             //Inicializacion del callback de la interfaz
-                callback=(EscuchandoPaginas) context;
+            callback=(EscuchandoPaginas) context;
         }catch (Exception e){
             throw new ClassCastException(context.toString());
         }
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View view=inflater.inflate(R.layout.fragment_bienvenido, container, false);
+        View view= inflater.inflate(R.layout.fragment_final, container, false);
+        //Metodo para inicilizar componentes
         Inicializar(view);
-        //Boton del fragmento inicializacion
-        bienvenidoButton.setOnClickListener(new View.OnClickListener() {
+        //Evento del boton de la vista
+        finalButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 enviaNumRegistro();
             }
         });
@@ -51,10 +54,10 @@ private EscuchandoPaginas callback;
     }
     //Metodo para inicializar los componentes
     private void Inicializar(View view){
-        bienvenidoButton=view.findViewById(R.id.bienvenidoButton);
+        finalButton=view.findViewById(R.id.finalButton);
     }
     //Metodo para enviar el numero de registro a la actividad mediante la interfaz
     private void enviaNumRegistro(){
-        callback.RecuperarNumPag(2);
+        callback.RecuperarNumPag(6);
     }
 }

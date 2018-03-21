@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lesh.zonaverde.FragmentsRegistro.PoliticaFragment">
+    tools:context="com.example.lesh.zonaverde.FragmentsRegistro.FinalFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -11,12 +11,13 @@
         android:gravity="center"
         android:background="@color/colorFondo"
         android:fontFamily="@font/love_ya_like_a_sister"
-        android:text="Aqui va la politica en un string"
+        android:text="Final del registro"
         android:textSize="40sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/politicaButton"
+        android:id="@+id/finalButton"
         style="@style/boton"
-        android:text="@string/continuar" />
+        android:text="@string/ultimo" />
+
 </FrameLayout>
