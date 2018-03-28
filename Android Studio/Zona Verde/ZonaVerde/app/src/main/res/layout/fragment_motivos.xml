@@ -14,6 +14,18 @@
         android:text="Motivos para la cuenta"
         android:textSize="40sp"
         android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/plantas" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:src="@drawable/rama" />
 
     <Button
         android:id="@+id/motivosButton"

@@ -5,6 +5,6 @@ package com.example.lesh.zonaverde.Interfaces.Pages;
  */
 //Interfaz para cambiar entre fragments
 public interface EscuchandoPaginas {
-     //Metodo para recuperar el numero de pagina o de fragmento
-     void RecuperarNumPag(int num);
+    //Metodo para recuperar el numero de pagina o de fragmento
+    void RecuperarNumPag(int num);
 }

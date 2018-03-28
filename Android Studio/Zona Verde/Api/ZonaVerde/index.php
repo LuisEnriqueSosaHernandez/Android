@@ -6,11 +6,11 @@ mysqli_set_charset($db, "utf8");
 
 $app->get("/Estados",function () use($db,$app){
     $query=$db->query("SELECT * FROM Estados;");
-    $estados= array();
+    $estados=array();
     while($fila=$query->fetch_assoc()){
        $estados[]=$fila;
     }
-    echo json_encode($estados);
+    echo json_encode(array('estados'=>$estados));
 });
 
 $app->get("/Municipios/:IdEstado",function ($IdEstado) use($db,$app){
