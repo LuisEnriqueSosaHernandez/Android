@@ -7,7 +7,6 @@ import android.view.WindowManager;
 
 import com.example.lesh.zonaverde.Activities.BienvenidoActivity;
 import com.example.lesh.zonaverde.Activities.LoginActivity;
-import com.example.lesh.zonaverde.Activities.MainActivity;
 import com.facebook.AccessToken;
 
 public class SplashActivity extends AppCompatActivity {

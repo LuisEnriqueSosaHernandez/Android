@@ -9,5 +9,8 @@
     <string name="continuar">Next</string>
     <string name="no">Not now</string>
     <string name="ultimo">Finalize</string>
+    <string name="estado">Choose your state:</string>
+    <string name="municipio">Choose your municipality:</string>
+    <string name="suelo">Choose your type of floor:</string>
 
 </resources>

@@ -10,7 +10,8 @@
     <string name="continuar">Continuar</string>
     <string name="no">Ahora no</string>
     <string name="ultimo">Finalizar</string>
+    <string name="estado">Selecciona tu estado:</string>
+    <string name="municipio">Selecciona tu municipio:</string>
+    <string name="suelo">Escoje tu tipo de suelo:</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

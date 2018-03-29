@@ -19,7 +19,16 @@ $app->get("/Municipios/:IdEstado",function ($IdEstado) use($db,$app){
     while($fila=$query->fetch_assoc()){
        $municipios[]=$fila;
     }
-    echo json_encode($municipios);
+    echo json_encode(array('municipios'=>$municipios));
+});
+
+$app->get("/Suelos",function () use($db,$app){
+    $query=$db->query("SELECT * FROM Suelos;");
+    $suelos=array();
+    while($fila=$query->fetch_assoc()){
+       $suelos[]=$fila;
+    }
+    echo json_encode(array('suelos'=>$suelos));
 });
 
 $app->run();
