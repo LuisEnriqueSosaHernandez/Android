@@ -1,5 +1,6 @@
 package com.example.lesh.notifications;
 
+import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -10,7 +11,7 @@ public class NotificationHandler extends ContextWrapper {
 private NotificationManager manager;
 public static final String CHANNEL_HIGH_ID="1";
 private final String CHANNEL_HIGH_NAME="HIGH CHANNEL";
-public static final String CHANNEL_LOW_ID="1";
+public static final String CHANNEL_LOW_ID="2";
 private final String CHANNEL_LOW_NAME="LOW CHANNEL";
     public NotificationHandler(Context context) {
         super(context);
@@ -36,4 +37,31 @@ private final String CHANNEL_LOW_NAME="LOW CHANNEL";
             }
             return manager;
     }
+
+    public Notification.Builder createNotification(String title,String message,boolean isHighImportance){
+       if(Build.VERSION.SDK_INT>=26){
+           if(isHighImportance){
+               return this.createNotificationWithChannel(title,message,CHANNEL_HIGH_ID);
+           }
+           return this.createNotificationWithChannel(title,message,CHANNEL_LOW_ID);
+       }
+       return this.createNotificationWithoutChannel(title,message);
+    }
+
+    private Notification.Builder createNotificationWithChannel(String title,String message,String channelId){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            return new Notification.Builder(getApplicationContext(),channelId).setContentTitle(title).
+                    setContentText(message).setSmallIcon(android.R.drawable.stat_notify_chat).
+                    setAutoCancel(true);
+
+        }
+        return null;
+    }
+
+    private Notification.Builder createNotificationWithoutChannel(String title,String message){
+            return new Notification.Builder(getApplicationContext()).setContentTitle(title).
+                    setContentText(message).setSmallIcon(android.R.drawable.stat_notify_chat).
+                    setAutoCancel(true);
+    }
 }
+
