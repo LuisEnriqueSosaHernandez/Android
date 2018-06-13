@@ -36,11 +36,11 @@ private boolean isHighImportance=false;
     @OnCheckedChanged(R.id.switchImportants)
     public void change(CompoundButton buttonView, boolean isChecked){
         isHighImportance=isChecked;
-        Toast.makeText(this,"working: "+isHighImportance,Toast.LENGTH_SHORT).show();
+
     }
 
     private void sendNotification(){
-        Toast.makeText(this,"working",Toast.LENGTH_SHORT).show();
+
     }
 
 }
