@@ -6,11 +6,10 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.graphics.Color;
-import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.Nullable;
+import android.widget.Toast;
 
 public class NotificationHandler extends ContextWrapper {
 private NotificationManager manager;
@@ -32,9 +31,9 @@ private final String CHANNEL_LOW_NAME="LOW CHANNEL";
             highChannel.setLightColor(Color.YELLOW);
             highChannel.setShowBadge(true);
             highChannel.enableVibration(true);
-            highChannel.setVibrationPattern(new long[]{100,200,300,400,500,400,200,100,400});
-            Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-            highChannel.setSound(defaultSoundUri,null);
+            //highChannel.setVibrationPattern(new long[]{100,200,300,400,500,400,200,100,400});
+            //Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+            //highChannel.setSound(defaultSoundUri,null);
             highChannel.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
             NotificationChannel lowChannel=new NotificationChannel(CHANNEL_LOW_ID,CHANNEL_LOW_NAME,NotificationManager.IMPORTANCE_LOW);
             lowChannel.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
