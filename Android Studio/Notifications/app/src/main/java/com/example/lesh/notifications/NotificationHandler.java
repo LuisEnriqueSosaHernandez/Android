@@ -22,6 +22,8 @@ public class NotificationHandler extends ContextWrapper {
     private final String CHANNEL_HIGH_NAME = "HIGH CHANNEL";
     public static final String CHANNEL_LOW_ID = "2";
     private final String CHANNEL_LOW_NAME = "LOW CHANNEL";
+    private final int SUMMARY_GROUP_ID=1001;
+    private final String SUMMARY_GROUP_NAME="GROUPING_NOTIFICATION";
 
     public NotificationHandler(Context context) {
         super(context);
@@ -56,7 +58,7 @@ public class NotificationHandler extends ContextWrapper {
         return manager;
     }
     public Notification.Builder createNotification(String title, String message, boolean isHighImportance) {
-        if (Build.VERSION.SDK_INT >= 26) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (isHighImportance) {
                 return this.createNotificationWithChannel(title, message, CHANNEL_HIGH_ID);
             }
@@ -73,6 +75,7 @@ public class NotificationHandler extends ContextWrapper {
                     setContentText(message).
                     setColor(getColor(R.color.colorPrimary)).
                     setSmallIcon(android.R.drawable.stat_notify_chat).
+                    setGroup(SUMMARY_GROUP_NAME).
                     setAutoCancel(true);
 
         }
@@ -91,6 +94,18 @@ public class NotificationHandler extends ContextWrapper {
                         setContentIntent(PIntent).
                 setContentText(message).setSmallIcon(android.R.drawable.stat_notify_chat).
                 setAutoCancel(true);
+    }
+
+    public void publishNotificationSummaryGroup(boolean isHighImportance){
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+            String channelId=(isHighImportance)?CHANNEL_HIGH_ID:CHANNEL_LOW_ID;
+            Notification summaryNotification=new Notification.Builder(getApplicationContext(),
+                    channelId).setSmallIcon(android.R.drawable.stat_notify_call_mute).
+                    setGroup(SUMMARY_GROUP_NAME).
+                    setGroupSummary(true).
+                    build();
+            getManager().notify(SUMMARY_GROUP_ID,summaryNotification);
+        }
     }
 }
 
