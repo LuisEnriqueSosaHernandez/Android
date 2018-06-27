@@ -1,6 +1,7 @@
 package com.example.lesh.board.Activities;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -8,24 +9,41 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.lesh.board.Adapters.BoardAdapter;
 import com.example.lesh.board.Models.Board;
 import com.example.lesh.board.R;
 
 import io.realm.Realm;
+import io.realm.RealmChangeListener;
+import io.realm.RealmResults;
 
-public class BoardActivity extends AppCompatActivity {
+public class BoardActivity extends AppCompatActivity implements RealmChangeListener<RealmResults<Board>> ,
+        AdapterView.OnItemClickListener{
     private Realm realm;
     private FloatingActionButton fab;
+    private ListView listView;
+    private BoardAdapter adapter;
+
+    private RealmResults<Board> boards;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Bb realm
-        realm=Realm.getDefaultInstance();
         setContentView(R.layout.activity_board);
+        //Bb realm
+        realm = Realm.getDefaultInstance();
+        boards = realm.where(Board.class).findAll();
+        boards.addChangeListener(this);
+
+        adapter = new BoardAdapter(this, boards, R.layout.list_view_board_item);
+        listView = findViewById(R.id.listViewBoard);
+        listView.setAdapter(adapter);
         fab = findViewById(R.id.fabAddBoard);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,10 +52,11 @@ public class BoardActivity extends AppCompatActivity {
             }
         });
     }
-//Crud actions
+
+    //Crud actions
     private void createNewBoard(String boardName) {
         realm.beginTransaction();
-        Board board=new Board(boardName);
+        Board board = new Board(boardName);
         realm.copyToRealm(board);
         realm.commitTransaction();
     }
@@ -67,5 +86,17 @@ public class BoardActivity extends AppCompatActivity {
         });
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    @Override
+    public void onChange(RealmResults<Board> boards) {
+        adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Intent intent=new Intent(BoardActivity.this,NoteActivity.class);
+        intent.putExtra("id",boards.get(position).getId());
+        startActivity(intent);
     }
 }
