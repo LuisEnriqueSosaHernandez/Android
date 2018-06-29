@@ -7,7 +7,10 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -23,8 +26,8 @@ import io.realm.Realm;
 import io.realm.RealmChangeListener;
 import io.realm.RealmResults;
 
-public class BoardActivity extends AppCompatActivity implements RealmChangeListener<RealmResults<Board>> ,
-        AdapterView.OnItemClickListener{
+public class BoardActivity extends AppCompatActivity implements RealmChangeListener<RealmResults<Board>>,
+        AdapterView.OnItemClickListener {
     private Realm realm;
     private FloatingActionButton fab;
     private ListView listView;
@@ -52,10 +55,7 @@ public class BoardActivity extends AppCompatActivity implements RealmChangeListe
                 showAlertForCreatingBoard("Add new Board", "Type a name for your new board");
             }
         });
-
-        realm.beginTransaction();
-        realm.deleteAll();
-        realm.commitTransaction();
+        registerForContextMenu(listView);
     }
 
     //Crud actions
@@ -63,6 +63,25 @@ public class BoardActivity extends AppCompatActivity implements RealmChangeListe
         realm.beginTransaction();
         Board board = new Board(boardName);
         realm.copyToRealm(board);
+        realm.commitTransaction();
+    }
+
+    private void editBoard(String newName, Board board) {
+        realm.beginTransaction();
+        board.setTitle(newName);
+        realm.copyToRealmOrUpdate(board);
+        realm.commitTransaction();
+    }
+
+    private void deleteBoard(Board board) {
+        realm.beginTransaction();
+        board.deleteFromRealm();
+        realm.commitTransaction();
+    }
+
+    private void deleteAll(){
+        realm.beginTransaction();
+        realm.deleteAll();
         realm.commitTransaction();
     }
 
@@ -93,6 +112,74 @@ public class BoardActivity extends AppCompatActivity implements RealmChangeListe
         dialog.show();
     }
 
+    private void showAlertForEditingBoard(String title, String message, final Board board) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        if (!TextUtils.isEmpty(title)) builder.setTitle(title);
+        if (!TextUtils.isEmpty(message)) builder.setMessage(message);
+
+        View viewInflated = LayoutInflater.from(this).inflate(R.layout.dialog_create_board, null);
+        builder.setView(viewInflated);
+
+        final EditText input = viewInflated.findViewById(R.id.editTextNewBoard);
+        input.setText(board.getTitle());
+        builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String boardName = input.getText().toString().trim();
+                if (boardName.length() == 0) {
+                    Toast.makeText(getApplicationContext(), "The name is required to edit the current Board", Toast.LENGTH_SHORT).show();
+                } else if (boardName.equals(board.getTitle())) {
+                    Toast.makeText(getApplicationContext(), "The name is the same than it was before", Toast.LENGTH_SHORT).show();
+                } else {
+                    editBoard(boardName, board);
+                }
+            }
+        });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_board_activity, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.delete_all:
+               deleteAll();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
+        menu.setHeaderTitle(boards.get(info.position).getTitle());
+        getMenuInflater().inflate(R.menu.context_menu_board_activity, menu);
+
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        switch (item.getItemId()) {
+            case R.id.delete_board:
+                deleteBoard(boards.get(info.position));
+                return true;
+            case R.id.edit_board:
+                showAlertForEditingBoard("Edit Board", "Change the name of the board", boards.get(info.position));
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
+    }
+
     @Override
     public void onChange(RealmResults<Board> boards) {
         adapter.notifyDataSetChanged();
@@ -100,8 +187,8 @@ public class BoardActivity extends AppCompatActivity implements RealmChangeListe
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Intent intent=new Intent(BoardActivity.this,NoteActivity.class);
-        intent.putExtra("id",boards.get(position).getId());
+        Intent intent = new Intent(BoardActivity.this, NoteActivity.class);
+        intent.putExtra("id", boards.get(position).getId());
         startActivity(intent);
     }
 }
