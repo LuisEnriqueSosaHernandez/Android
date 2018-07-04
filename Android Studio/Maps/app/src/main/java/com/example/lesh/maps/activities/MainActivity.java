@@ -13,13 +13,15 @@ import com.example.lesh.maps.fragments.WelcomeFragment;
 public class MainActivity extends AppCompatActivity {
 Fragment currentFragment;
 
-
+    //Se llama cada vez que rota
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        currentFragment=new WelcomeFragment();
-        changeFragment(currentFragment);
+        if(savedInstanceState==null){
+            currentFragment=new WelcomeFragment();
+            changeFragment(currentFragment);
+        }
     }
 
     @Override
