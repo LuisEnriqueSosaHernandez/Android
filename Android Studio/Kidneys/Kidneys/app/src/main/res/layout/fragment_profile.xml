@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/card_viewProfileTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@color/colorRosado"
+            card_view:cardCornerRadius="4dp"
+            tools:context=".FragmentsProfile.ProfileFragment">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight=".9">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/floatingPasswordProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:clickable="true"
+                            android:src="@drawable/ic_password"
+                            app:backgroundTint="@color/colorBlancoNeutro"
+                            android:visibility="gone"
+                            app:borderWidth="0dp" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/floatingEditProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:clickable="true"
+                            android:src="@drawable/ic_edit"
+                            app:backgroundTint="@color/colorBlancoNeutro"
+                            android:visibility="gone"
+                            app:borderWidth="0dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fondo" />
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile"
+                        app:civ_border_color="@color/colorBlanco"
+                        app:civ_border_width="4dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_color="@color/colorRosado"
+                        app:civ_shadow_radius="10" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom">
+                    <TextView
+                        android:id="@+id/txtProfileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alice"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/txtProfileCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/alice"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/correo"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorBlanco"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.1"
+                   android:padding="4dp">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/card_viewProfileGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="@color/colorBlanco"
+                        card_view:cardCornerRadius="4dp"
+                        tools:context=".FragmentsProfile.ProfileFragment">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    card_view:cardBackgroundColor="@color/colorBlanco"
+                                    card_view:cardCornerRadius="4dp">
+
+                                    <TextView
+                                        android:id="@+id/txtProfileAge"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/alice"
+                                        android:padding="4dp"
+                                        android:text="@string/edad"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                        android:textColor="@color/colorNegro"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    card_view:cardBackgroundColor="@color/colorBlanco"
+                                    card_view:cardCornerRadius="4dp">
+
+                                    <TextView
+                                        android:id="@+id/txtProfileWeight"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/alice"
+                                        android:padding="4dp"
+                                        android:text="@string/peso"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                        android:textColor="@color/colorNegro"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    card_view:cardBackgroundColor="@color/colorBlanco"
+                                    card_view:cardCornerRadius="4dp">
+
+                                    <TextView
+                                        android:id="@+id/txtProfileHeight"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/alice"
+                                        android:padding="4dp"
+                                        android:text="@string/altura"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                        android:textColor="@color/colorNegro"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/card_view_profile_imc"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                card_view:cardBackgroundColor="@color/colorBlanco"
+                                card_view:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtProfileImc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/alice"
+                                    android:padding="4dp"
+                                    android:text="@string/imc"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/colorBlanco"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                card_view:cardBackgroundColor="@color/colorBlanco"
+                                card_view:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtProfileGender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/alice"
+                                    android:padding="4dp"
+                                    android:text="@string/genero"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/colorNegro"
+                                    android:textSize="15sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                card_view:cardBackgroundColor="@color/colorBlanco"
+                                card_view:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtProfileDateCatheter"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/alice"
+                                    android:padding="4dp"
+                                    android:text="@string/fechacateter"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/colorNegro"
+                                    android:textSize="15sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                card_view:cardBackgroundColor="@color/colorBlanco"
+                                card_view:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtProfileTypeOfSolution"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/alice"
+                                    android:padding="4dp"
+                                    android:text="@string/tipodesolucion"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/colorNegro"
+                                    android:textSize="15sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                card_view:cardBackgroundColor="@color/colorBlanco"
+                                card_view:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtProfileTypeOfTreatment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/alice"
+                                    android:padding="4dp"
+                                    android:text="@string/tipodetratamiento"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/colorNegro"
+                                    android:textSize="15sp" />
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                card_view:cardBackgroundColor="@color/colorBlanco"
+                                card_view:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/txtProfileEmergencyContact"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/alice"
+                                    android:padding="4dp"
+                                    android:text="@string/contactoemergencia"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="@color/colorNegro"
+                                    android:textSize="15sp" />
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </ScrollView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

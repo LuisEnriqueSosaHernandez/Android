@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentsMain.MainFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:weightSum="2">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/colorAzul"
+        card_view:cardCornerRadius="4dp">
+        <ImageView
+            android:id="@+id/imageLoginFondo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/backgroundmain" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/colorBlanco"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/colorBlanco"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/contactoemergencia"
+            android:textColor="@color/colorNegro"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingPhoneMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:src="@drawable/ic_phone"
+            app:backgroundTint="@color/colorBlancoNeutro"
+            app:borderWidth="0dp" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</FrameLayout>

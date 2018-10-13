@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsWelcome.WelcomeSeventhFragment">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/colorBlanco"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="460dp"
+                android:background="@drawable/welcomeg" />
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="@string/welcomeg"
+                android:textColor="@color/colorNegro"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

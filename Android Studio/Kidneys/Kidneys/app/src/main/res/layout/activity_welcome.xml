@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WelcomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+    <TextView
+        android:id="@+id/textViewNumPagesWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:layout_margin="4dp"
+        android:fontFamily="@font/alice"
+        android:gravity="top|left"
+        android:text="@string/pag"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorNegro"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pagerWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"/>
+    <SeekBar
+        android:id="@+id/seekBarWelcome"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:layout_gravity="bottom|center"
+        android:max="9"
+        android:progress="0"
+        android:progressTint="@color/colorNegro"
+        android:thumbTint="@color/colorAzul" />
+    </LinearLayout>
+</FrameLayout>

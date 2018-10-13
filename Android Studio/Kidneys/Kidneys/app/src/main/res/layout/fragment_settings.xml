@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsSettings.SettingsFragment">
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/colorBlanco"
+        card_view:cardCornerRadius="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="Color de la app"
+                android:textColor="@color/colorNegro"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingRefreshSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:clickable="true"
+                android:src="@drawable/ic_refresh"
+                app:backgroundTint="@color/colorAzul"
+                app:borderWidth="0dp" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBoxAzulSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colorazul"
+            android:textColor="@color/colorAzul"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMarronSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colormarron"
+            android:textColor="@color/colorMarron"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRosadoSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colorrosado"
+            android:textColor="@color/colorRosado"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:text="Control de datos"
+            android:textColor="@color/colorNegro"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCargarSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cargarinicio"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:text="@string/advercargarinicio"
+            android:textColor="@color/colorNegro"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNoCargarSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nocargar"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:text="@string/advernocargar"
+            android:textColor="@color/colorNegro"
+            android:textSize="12sp" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

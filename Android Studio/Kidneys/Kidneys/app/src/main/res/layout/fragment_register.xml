@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentsRegister.RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/crearcuenta"
+                android:textColor="@color/colorNegro"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextNameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ems="10"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:hint="@string/namecompleto"
+                android:inputType="textCapWords"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/advertencianombre"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ems="10"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:hint="@string/correo"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/ejemploemail"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextWeightRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ems="10"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:hint="@string/peso"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/advertenciapeso"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextHeightRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ems="10"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:hint="@string/altura"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/advertenciaaltura"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ems="10"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:hint="@string/contra"
+                android:inputType="textPassword"
+                android:maxLength="25"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/advertenciacontra"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextPasswordConfirmRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ems="10"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:hint="@string/confirmarpassword"
+                android:inputType="textPassword"
+                android:maxLength="25"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/confirmarpassword"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextDateOfBirthRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ems="1"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:hint="@string/fechanacimiento"
+                android:inputType="date"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/fechanacimiento"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextDateCatheterRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:ems="1"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:hint="@string/fechacateter"
+                android:inputType="date"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/fechacateter"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/genero"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorBlanco"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/tipodesolucion"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerRegisterTypeOfSolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorBlanco"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/tipodetratamiento"
+                android:textColor="@color/colorNegro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerRegisterTypeOfTreatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorBlanco"
+                android:gravity="center" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinnerRegisterExtension"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlanco"
+                    android:gravity="center" />
+                <EditText
+                    android:id="@+id/editTextContactEmergencyRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/alice"
+                    android:gravity="center"
+                    android:hint="@string/contactoemergencia"
+                    android:inputType="number"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/alice"
+                android:gravity="center"
+                android:text="@string/advercontact"
+                android:textColor="@color/colorNegro"
+                android:textSize="12sp" />
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorAzul"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/alice"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/registrar"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlanco"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:text="@string/tipodesolucion"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerFollowDayTypeOfSolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorBlanco"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/colorBlanco">
+                <EditText
+                    android:id="@+id/editTextStartFollowDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="16dp"
+                    android:ems="1"
+                    android:fontFamily="@font/alice"
+                    android:gravity="center"
+                    android:hint="@string/horadeinicio"
+                    android:inputType="date"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/editTextEndFollowDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="16dp"
+                    android:ems="1"
+                    android:fontFamily="@font/alice"
+                    android:gravity="center"
+                    android:hint="@string/horafinaliza"
+                    android:inputType="date"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/editTextDrainageFollowDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:ems="10"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:hint="@string/drenado"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:text="@string/adverdrenado"
+            android:textColor="@color/colorNegro"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/editTextUfFollowDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:ems="10"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:hint="@string/uf"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:text="@string/adveruf"
+            android:textColor="@color/colorNegro"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/editTextIngestedLiquid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:ems="10"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:hint="@string/liquidoingerido"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorNegro"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:text="@string/adverliquidoingerido"
+            android:textColor="@color/colorNegro"
+            android:textSize="12sp" />
+    </LinearLayout>
+</FrameLayout>

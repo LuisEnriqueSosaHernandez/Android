@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/editTextFollowDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="1"
+        android:fontFamily="@font/alice"
+        android:gravity="center"
+        android:hint="@string/fecha"
+        android:inputType="date"
+        android:textColor="@color/colorNegro"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewStateOfMindTreatmentsGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlanco"
+            android:fontFamily="@font/alice"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/animo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorNegro"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlanco"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingGoodFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:src="@drawable/ic_healthy"
+            app:backgroundTint="@color/colorBlancoNeutro"
+            app:borderWidth="0dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingNormalFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:src="@drawable/ic_medium"
+            app:backgroundTint="@color/colorBlancoNeutro"
+            app:borderWidth="0dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingBadFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:src="@drawable/ic_harmful"
+            app:backgroundTint="@color/colorBlancoNeutro"
+            app:borderWidth="0dp" />
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

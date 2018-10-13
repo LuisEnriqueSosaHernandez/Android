@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navinicio"
+            android:icon="@mipmap/ic_kidneys"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/navperfil"
+            android:icon="@mipmap/ic_profile"
+            android:title="@string/perfil" />
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navtratamiento"
+            android:icon="@mipmap/ic_tratamientos"
+            android:title="@string/tratamientos" />
+        <item
+            android:id="@+id/navreglas"
+            android:icon="@mipmap/ic_food_rules"
+            android:title="@string/reglas" />
+        <item
+            android:id="@+id/navseguimiento"
+            android:icon="@mipmap/ic_seguimiento"
+            android:title="@string/seguimiento" />
+        <item
+            android:id="@+id/navmapa"
+            android:icon="@mipmap/ic_maps"
+            android:title="@string/mapa" />
+    </group>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navcontacto"
+            android:icon="@mipmap/ic_contacto"
+            android:title="@string/contacto" />
+        <item
+            android:id="@+id/navpoliticas"
+            android:icon="@mipmap/ic_politica"
+            android:title="@string/politicas" />
+        <item
+            android:id="@+id/navacercade"
+            android:icon="@mipmap/ic_acercade"
+            android:title="@string/acercade" />
+        <item
+            android:id="@+id/navhelp"
+            android:icon="@mipmap/ic_help"
+            android:title="@string/ayuda" />
+    </group>
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navsalir"
+            android:icon="@mipmap/ic_cerrarsesion"
+            android:title="@string/salir" />
+    </group>
+</menu>

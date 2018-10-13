@@ -1,0 +1,25 @@
+Blanco: pureza, limpieza, felicidad, sinceridad y seguridad. Se asocia mucho a la salud.
+Código hexadecimal: #f1f1f1
+
+Verde: el crecimiento, la salud, naturaleza, bienestar, dinero, calma, generosidad, fertilidad, envidia, buena suerte, paz y energía. Energía, alimentación y salud son los sectores más habituales en los que se aplica.
+Código hexadecimal: #4cc305
+
+Azul: eficacia, calidad, calma, seriedad, fortaleza, sabiduría, lealtad, fuerza, productividad, confianza y seguridad. Es ideal para sectores como finanzas, salud y tecnología.
+Código hexadecimal: #26a69a
+
+Marrón: tierra, la aspereza, comida,fiabilidad, estabilidad, amistad y naturaleza. Recomendamos aplicarlo al sector de la alimentación.
+Código hexadecimal: #f0aa3c
+
+Negro:#121212 el color mas utilizado en el mundo.
+
+Rosado: el color de la diversidad.
+Código hexadecimal: #ff8a9b
+
+Rojo: el color de alerta y peligro.
+Código hexadecimal: #d10000
+
+Gris: aburrimiento , color nostalgico.
+Código hexadecimal: #c6c6c6
+
+Blanco neutro: El blanco comun en los hospitales
+Código hexadecimal: #ffffff

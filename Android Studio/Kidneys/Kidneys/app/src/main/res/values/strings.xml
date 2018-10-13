@@ -1,0 +1,245 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Kidneys</string>
+    <string name="facebook_app_id">502666713463443</string>
+    <string name="fb_login_protocol_scheme" tools:ignore="MissingTranslation">fb502666713463443</string>
+    <string name="correo">Email</string>
+    <string name="contra">Password</string>
+    <string name="ingresar">Login</string>
+    <string name="iniciando">Log in...</string>
+    <string name="omitir">Skip</string>
+    <string name="cancelado">Canceled action</string>
+    <string name="errorconexion">Lost connection</string>
+    <string name="sesioncerrada">Closing session</string>
+    <string name="errorsesion">An error has occurred in the session</string>
+    <string name="errordatos">Your data is required</string>
+    <string name="inicio">Kidneys</string>
+    <string name="perfil">My profile</string>
+    <string name="tratamientos">Treatments</string>
+    <string name="reglas">Food rules</string>
+    <string name="mapa">Map</string>
+    <string name="contacto">Contact</string>
+    <string name="politicas">Privacy politic</string>
+    <string name="acercade">About</string>
+    <string name="salir">Logout</string>
+    <string name="recetas">Recipes</string>
+    <string name="guias">Guides</string>
+    <string name="guia">Guide</string>
+    <string name="alimentos">Foods</string>
+    <string name="aceptar">Accept</string>
+    <string name="cancelar">Cancel</string>
+    <string name="gps">GPS</string>
+    <string name="activaciongps">You need to activate the GPS</string>
+    <string name="fijarlocalizacion">Update location</string>
+    <string name="irmenuprincipal">Go to the main menu</string>
+    <string name="espera">Please wait</string>
+    <string name="registrando">Registering...</string>
+    <string name="registro">Registered user</string>
+    <string name="noregistro">Unregistered user</string>
+    <string name="errorraro">An error has occurred</string>
+    <string name="bienvenidootra">Welcome back</string>
+    <string name="errorcarga">An error occurred loading the data</string>
+    <string name="cargacorrecta">Data successfully loaded</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="prepare">Preparation</string>
+    <string name="categories">Categories</string>
+    <string name="seguimientos">Follows</string>
+    <string name="seguimiento">Follow</string>
+    <string name="fecha">Date</string>
+    <string name="reintentardatos">retrying</string>
+    <string name="buscar">Search</string>
+    <string name="eliminar">Delete</string>
+    <string name="confirmaralert">Are you sure?</string>
+    <string name="nuevofollow">New follow</string>
+    <string name="nuevofollowmessage">Add new follow</string>
+    <string name="anadir">Add</string>
+    <string name="vacio">Empty</string>
+    <string name="correovacio">Email empty</string>
+    <string name="eliminado">Deleted</string>
+    <string name="noeliminado">Not Deleted</string>
+    <string name="insertado">Inserted</string>
+    <string name="noinsertado">Not inserted</string>
+    <string name="errorreliminar">Error deleted</string>
+    <string name="erroragregar">Error add</string>
+    <string name="insertando">Inserting...</string>
+    <string name="eliminando">Deleting...</string>
+    <string name="correocontacto">kidneysapp@gmail.com</string>
+    <string name="destinario">To</string>
+    <string name="asunto">Subject</string>
+    <string name="mensaje">Message</string>
+    <string name="enviar">Send</string>
+    <string name="enviarcorreo">Send email</string>
+    <string name="errorcorreo">Do not exist aplication email</string>
+    <string name="genero">Gender</string>
+    <string name="masculino">Male</string>
+    <string name="femenino">Female</string>
+    <string name="muyrecomendado">Highly recommended</string>
+    <string name="pocorecomendado">Little recommended</string>
+    <string name="norecomendado">Not recommended</string>
+    <string name="todos">All</string>
+    <string name="ajustes">Settings</string>
+    <string name="redactarcorreo">Write email </string>
+    <string name="actualizar">Update</string>
+    <string name="cambiosrealizados">Changes realized</string>
+    <string name="ayuda">Help</string>
+    <string name="alimentoscard">All about food</string>
+    <string name="recetascard">The best recipes</string>
+    <string name="guiascard">Guidelines for patients with CRI</string>
+    <string name="seguimientoscard">Save your results</string>
+    <string name="colorazul">Color blue</string>
+    <string name="colormarron">Color yellow</string>
+    <string name="colorrosado">Color pink</string>
+    <string name="colorrojo">Color red</string>
+    <string name="nocuenta">I do not have account</string>
+    <string name="crearcuenta">Create account</string>
+    <string name="registrar">Register</string>
+    <string name="namecompleto">Full name</string>
+    <string name="confirmarpassword">Confirm password</string>
+    <string name="advertencianombre">Min 6 characters</string>
+    <string name="ejemploemail">karina@example.com</string>
+    <string name="advertenciacontra">Long min 6 characteres and max 25 characteres</string>
+    <string name="nombreinvalido">The name must contain a minimum of 6 characters</string>
+    <string name="correoinvalido">The email is invalid</string>
+    <string name="contrainvalido">The password must contain a minimum of 6 characters and max 25 characteres</string>
+    <string name="contranocoincide">The password not equals</string>
+    <string name="correonodisponible">The email is ocupped</string>
+    <string name="registrarme">Register now</string>
+    <string name="iniciarnormal">Is dangerous</string>
+    <string name="inicioincorrecto">Email or password incorrect</string>
+    <string name="preguntasfrecuentes">Question frecuently</string>
+    <string name="preguntascomunes">Question of users</string>
+    <string name="respuesta">Answer</string>
+    <string name="cargarinicio">Load data when starting</string>
+    <string name="nocargar">Load data on demand</string>
+    <string name="cargartoast">The data will be loaded when the application starts</string>
+    <string name="nocargartoast">The data will be loaded on demand</string>
+    <string name="advercargarinicio">Checking this box is Internet consumption is higher</string>
+    <string name="advernocargar">By checking this box, Internet consumption is lower, however
+    the user experience is affected</string>
+    <string name="unaporcion">A portion of</string>
+    <string name="contiene">it contains</string>
+    <string name="sodio">Sodium</string>
+    <string name="potasio">Potassium</string>
+    <string name="fosforo">Phosphor</string>
+    <string name="pag">Page</string>
+    <string name="recordaremail">Remember email</string>
+    <string name="recordarpassword">Remember password</string>
+    <string name="adverrecordar">Do not remember password without email</string>
+    <string name="descargando">Downloaded</string>
+    <string name="descargacompleta">Complete download</string>
+    <string name="descargacancelada">Donwload canceled</string>
+    <string name="descargar">Download</string>
+    <string name="abrirpdf">Open pdf</string>
+    <string name="errorpdf">Do not exist aplication pdf</string>
+    <string name="numeropaginas">Num of pages</string>
+    <string name="autor">Author</string>
+    <string name="aiopublicacion">Year of publication</string>
+    <string name="referencias">References</string>
+    <string name="indice">Index</string>
+    <string name="fechanovalida">Invalid date</string>
+    <string name="bien">Good</string>
+    <string name="normal">Normal</string>
+    <string name="mal">Bad</string>
+    <string name="animo">How do you feel today?</string>
+    <string name="fechanacimiento">Date of birth</string>
+    <string name="peso">Weight</string>
+    <string name="advertenciapeso">The weight is in kg</string>
+    <string name="altura">Height</string>
+    <string name="advertenciaaltura">The height is in m</string>
+    <string name="fechacateter">Date of catheter placement</string>
+    <string name="pesoinvalido">The weight is not valid</string>
+    <string name="alturainvalida">The height is not valid</string>
+    <string name="edad">Age</string>
+    <string name="anios">years</string>
+    <string name="kilogramos">kg</string>
+    <string name="metros">m</string>
+    <string name="cambiarcontra">Change password</string>
+    <string name="nuevacontra">New password</string>
+    <string name="contraincorrecta">The password is incorrec</string>
+    <string name="contraactualizada">The password has been update</string>
+    <string name="contranoactualizada">The password no update</string>
+    <string name="actualizarperfil">Update profile</string>
+    <string name="perfilactualizado">The profile has been update</string>
+    <string name="perfilnoactualizado">The profile no update</string>
+    <string name="tipodesolucion">Type of solution</string>
+    <string name="imc">IMC</string>
+    <string name="tipodetratamiento">Type of treatment</string>
+    <string name="ambulatoria">Ambulatory peritoneal dialysis</string>
+    <string name="ciclica">Continuous cyclic peritoneal dialysis</string>
+    <string name="contactoemergencia">Contact of emergency</string>
+    <string name="advercontact">The number has contains 10 digits</string>
+    <string name="telefonoinvalido">The phone is invalid</string>
+    <string name="nohaytelefono">Phone no register</string>
+    <string name="llamando">Calling</string>
+    <string name="llamar">Call</string>
+    <string name="distribucion">Change distribution</string>
+    <string name="horadeinicio">Start time</string>
+    <string name="horafinaliza">Ending time</string>
+    <string name="drenado">Drained liquid</string>
+    <string name="adverdrenado">The drained liquid is in ml</string>
+    <string name="uf">Ultra filtration</string>
+    <string name="adveruf">Total ultrafiltration is in ml</string>
+    <string name="liquidoingerido">Ingested liquid</string>
+    <string name="adverliquidoingerido">The ingested liquid is in ml</string>
+    <string name="nuevorecambio">New replacement</string>
+    <string name="mensajenuevorecambio">Add new spare</string>
+    <string name="horanovalida">Invalid hour</string>
+    <string name="drenadoinvalido">Invalid drained</string>
+    <string name="ufinvalido">Invalid uf</string>
+    <string name="ingeridoinvalido">Invalid ingested liquid</string>
+    <string name="ml">ml</string>
+    <string name="actualizando">Updating...</string>
+    <string name="antesdecomenzar">Before starting</string>
+    <string name="welcomea">Kidneys has 7 main modules, navigate through the menu to access them</string>
+    <string name="welcomeb">The first module is your profile, customize it with the data that interests you</string>
+    <string name="welcomec">In the second module you will find guides that inform you about dialysis processes etc ...</string>
+    <string name="welcomed">In the third module you will find most of the information related to food that matters to you</string>
+    <string name="welcomee">In the fourth module you will find the best recipes for patients with kidney failure, as well as some recipes that you should avoid</string>
+    <string name="welcomef">In the fifth module you can forget about the paper and write down the results of your spare parts on the cell phone</string>
+    <string name="welcomeg">With the help of the sixth module you will be able to locate those places that may be useful at some time</string>
+    <string name="welcomeh">And last but not least, the help module where you will find the most common questions</string>
+    <string name="welcomei">Now that you know the fundamental thing, what do you think if we start</string>
+    <string name="welcome">Kidneys is a mobile application designed for patients with chronic renal failure (CRF) who
+        require a guide for the management and special care during their process of peritoneal dialysis. It is created so that
+        the user becomes familiar with the terms of the disease, as well as the recommendations for a better quality of life of the patient.
+</string>
+    <string name="textcontacto">
+        <![CDATA[
+        <html>
+    <body>
+<p>If you have questions, you can visit the help module, where you can find information that may be useful.</p>
+<p>If after that you still have questions or suggestions, do not hesitate to send us an email by clicking on the next button.</p>
+        </body>
+        </html>
+]]></string>
+    <string name="politica">
+        <![CDATA[
+        <html>
+    <body>
+       <h2>¿What do we do with your information?</h2>
+			<p>When you browse our store, we also automatically receive your computers Internet Protocol (IP) address in order to provide
+			us with information that helps us learn about your browser and operating system. Email marketing (if applicable): With your permission, we may
+			send you emails about our store, new products and other updates.</p>
+			<h2>Consent</h2>
+			<p>How do you get my consent? If we ask for your personal information for a secondary reason, such as marketing, we will ask you
+			directly for your express consent, or give you the opportunity to opt-out. If after you have agreed to change your mind, you may revoke your
+			consent for us to contact you about the collection, use or disclosure of your information at any time by contacting us at kidneysapp@gmail.com or
+			by writing to us at: Kidneys.</p>
+        </body>
+        </html>
+]]></string>
+    <string name="about">
+        <![CDATA[
+        <html>
+    <body>
+<h2>¿What is Kidneys?</h2>
+			<p>KIDNEYS is a mobile application for the android operating system, it is designed for patients with chronic renal insufficiency
+			or their families, designed for those who need to be self responsible and / or who are away from a medical center or who can not move to it, this
+			will allow them to consult from what measures to take based on the medical care of the treatment of kidney failure that they have, what food is
+			appropriate for people with this condition, how to help determine if their levels are not correct and even know how to change their dialysis
+			machine.</p>
+        </body>
+        </html>
+]]></string>
+</resources>

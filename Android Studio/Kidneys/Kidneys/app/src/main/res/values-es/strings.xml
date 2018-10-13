@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kidneys</string>
+    <string name="facebook_app_id">502666713463443</string>
+    <string name="correo">Correo</string>
+    <string name="contra">Contraseña</string>
+    <string name="ingresar">Iniciar sesión</string>
+    <string name="iniciando">Iniciando sesión...</string>
+    <string name="omitir">Omitir</string>
+    <string name="cancelado">Acción cancelada</string>
+    <string name="errorconexion">Conexión perdida</string>
+    <string name="sesioncerrada">Cerrando sesión</string>
+    <string name="errorsesion">Ha ocurrido un error en la sesión</string>
+    <string name="errordatos">Tus datos son requeridos</string>
+    <string name="inicio">Kidneys</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="tratamientos">Tratamientos</string>
+    <string name="reglas">Reglas alimenticias</string>
+    <string name="mapa">Mapa</string>
+    <string name="contacto">Contacto</string>
+    <string name="politicas">Política de privacidad</string>
+    <string name="acercade">Acerca de</string>
+    <string name="salir">Cerrar sesión</string>
+    <string name="recetas">Recetas</string>
+    <string name="guias">Guías</string>
+    <string name="guia">Guía</string>
+    <string name="alimentos">Alimentos</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="gps">GPS</string>
+    <string name="activaciongps">Necesitas activar el GPS</string>
+    <string name="fijarlocalizacion">Actualizar localización</string>
+    <string name="irmenuprincipal">Ir al menú principal</string>
+    <string name="espera">Espera un poco</string>
+    <string name="registrando">Registrando...</string>
+    <string name="registro">Usuario registrado</string>
+    <string name="noregistro">Usuario no registrado</string>
+    <string name="errorraro">Ha ocurrido un error</string>
+    <string name="bienvenidootra">Bienvenido de vuelta</string>
+    <string name="errorcarga">Ha ocurrido un error al cargar los datos</string>
+    <string name="cargacorrecta">Datos cargados exitosamente</string>
+    <string name="description">Descripción</string>
+    <string name="category">Categoría</string>
+    <string name="ingredients">Ingredientes</string>
+    <string name="prepare">Preparación</string>
+    <string name="categories">Categorías</string>
+    <string name="seguimientos">Seguimientos</string>
+    <string name="seguimiento">Seguimiento</string>
+    <string name="fecha">Fecha</string>
+    <string name="reintentardatos">Reintentando</string>
+    <string name="buscar">Buscar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="confirmaralert">¿Estas seguro?</string>
+    <string name="nuevofollow">Nuevo seguimiento</string>
+    <string name="nuevofollowmessage">Agregar nuevo seguimiento</string>
+    <string name="anadir">Añadir</string>
+    <string name="vacio">Vacío</string>
+    <string name="correovacio">Correo vacío</string>
+    <string name="eliminado">Eliminado</string>
+    <string name="noeliminado">No eliminado</string>
+    <string name="insertado">Insertado</string>
+    <string name="noinsertado">No insertado</string>
+    <string name="errorreliminar">Error al eliminar</string>
+    <string name="erroragregar">Error al agregar</string>
+    <string name="insertando">Insertando...</string>
+    <string name="eliminando">Eliminando...</string>
+    <string name="correocontacto">kidneysapp@gmail.com</string>
+    <string name="destinario">Destinatario</string>
+    <string name="asunto">Asunto</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="enviar">Enviar</string>
+    <string name="enviarcorreo">Enviar correo</string>
+    <string name="errorcorreo">Sin aplicación de correo</string>
+    <string name="genero">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="muyrecomendado">Muy recomendado</string>
+    <string name="pocorecomendado">Poco recomendado</string>
+    <string name="norecomendado">No recomendado</string>
+    <string name="todos">Todos</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="redactarcorreo">Redactar correo</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="cambiosrealizados">Cambios realizados</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="alimentoscard">Todo sobre los alimentos</string>
+    <string name="recetascard">Las mejores recetas</string>
+    <string name="guiascard">Guías para pacientes con IRC</string>
+    <string name="seguimientoscard">Guarda tus resultados</string>
+    <string name="colorazul">Color azul</string>
+    <string name="colormarron">Color amarillo</string>
+    <string name="colorrosado">Color rosado</string>
+    <string name="colorrojo">Color rojo</string>
+    <string name="nocuenta">No tengo una cuenta</string>
+    <string name="crearcuenta">Crear una cuenta</string>
+    <string name="registrar">Registrarme</string>
+    <string name="namecompleto">Nombre completo</string>
+    <string name="confirmarpassword">Confirmar contraseña</string>
+    <string name="advertencianombre">Minimo 6 caracteres</string>
+    <string name="ejemploemail">karina@example.com</string>
+    <string name="advertenciacontra">Longitud minima 6 caracteres y maxima 25 caracteres</string>
+    <string name="nombreinvalido">El nombre debe contener minimo 6 caracteres</string>
+    <string name="correoinvalido">El correo no es valido</string>
+    <string name="contrainvalido">La contraseña debe contener minimo 6 caracteres y maximo 25 caracteres</string>
+    <string name="contranocoincide">Las contraseñas no coinciden</string>
+    <string name="correonodisponible">El correo no esta disponible</string>
+    <string name="registrarme">Registrarme ahora</string>
+    <string name="iniciarnormal">Menos seguro</string>
+    <string name="inicioincorrecto">Correo o contraseña incorrectos</string>
+    <string name="preguntasfrecuentes">Preguntas frecuentes</string>
+    <string name="preguntascomunes">Preguntas mas comunes</string>
+    <string name="respuesta">Respuesta</string>
+    <string name="cargarinicio">Cargar datos al iniciar</string>
+    <string name="nocargar">Cargar datos bajo demanda</string>
+    <string name="cargartoast">Los datos se cargaran al iniciar la aplicación</string>
+    <string name="nocargartoast">Los datos se cargaran bajo demanda</string>
+    <string name="advercargarinicio">Al marcar esta casilla es consumo de internet es mayor</string>
+    <string name="advernocargar">Al marcar esta casilla el consumo de internet es menor, sin embargo
+    la experiencia de usuario se ve afectada</string>
+    <string name="unaporcion">Una porción de</string>
+    <string name="contiene">contiene</string>
+    <string name="sodio">Sodio</string>
+    <string name="potasio">Potasio</string>
+    <string name="fosforo">Fósforo</string>
+    <string name="pag">Página</string>
+    <string name="recordaremail">Recordar correo</string>
+    <string name="recordarpassword">Recordar contraseña</string>
+    <string name="adverrecordar">No se puede recordar una contraseña sin un correo</string>
+    <string name="descargando">Descargando</string>
+    <string name="descargacompleta">Descarga Completa</string>
+    <string name="descargacancelada">Descarga cancelada</string>
+    <string name="descargar">Descargar</string>
+    <string name="abrirpdf">Abrir pdf</string>
+    <string name="errorpdf">Sin aplicación de pdf</string>
+    <string name="numeropaginas">Número de páginas</string>
+    <string name="autor">Autor</string>
+    <string name="aiopublicacion">Año de publicación</string>
+    <string name="referencias">Referencias</string>
+    <string name="indice">Índice</string>
+    <string name="fechanovalida">Fecha no valida</string>
+    <string name="bien">Bien</string>
+    <string name="normal">Normal</string>
+    <string name="mal">Mal</string>
+    <string name="animo">¿Cómo te sientes hoy?</string>
+    <string name="fechanacimiento">Fecha de nacimiento</string>
+    <string name="peso">Peso</string>
+    <string name="advertenciapeso">El peso es en kg</string>
+    <string name="altura">Altura</string>
+    <string name="advertenciaaltura">La altura es en m</string>
+    <string name="fechacateter">Fecha de colocación del catéter</string>
+    <string name="pesoinvalido">El peso no es valido</string>
+    <string name="alturainvalida">La altura no es valida</string>
+    <string name="edad">Edad</string>
+    <string name="anios">años</string>
+    <string name="kilogramos">kg</string>
+    <string name="metros">m</string>
+    <string name="cambiarcontra">Cambiar contraseña</string>
+    <string name="nuevacontra">Nueva contraseña</string>
+    <string name="contraincorrecta">La contraseña es incorrecta</string>
+    <string name="contraactualizada">La contraseña ha sido actualiza</string>
+    <string name="contranoactualizada">La contraseña no ha sido actualiza</string>
+    <string name="actualizarperfil">Actualizar perfil</string>
+    <string name="perfilactualizado">El perfil ha sido actualzado</string>
+    <string name="perfilnoactualizado">El perfil no ha sido actualizado</string>
+    <string name="tipodesolucion">Tipo de solución</string>
+    <string name="imc">IMC</string>
+    <string name="tipodetratamiento">Tipo de tratamiento</string>
+    <string name="ambulatoria">Diálisis peritoneal ambulatoria</string>
+    <string name="ciclica">Diálisis peritoneal ciclica continua</string>
+    <string name="contactoemergencia">Contacto de emergencia</string>
+    <string name="advercontact">El número debe contener 10 dígitos</string>
+    <string name="telefonoinvalido">El número no es valido</string>
+    <string name="nohaytelefono">Sin número registrado</string>
+    <string name="llamando">Realizando llamada</string>
+    <string name="llamar">Llamar</string>
+    <string name="distribucion">Cambiar distribución</string>
+    <string name="horadeinicio">Hora inicio</string>
+    <string name="horafinaliza">Hora fin</string>
+    <string name="drenado">Líquido drenado</string>
+    <string name="adverdrenado">El líquido drenado es en ml</string>
+    <string name="uf">Ultra filtración</string>
+    <string name="adveruf">La ultrafiltración total es en ml</string>
+    <string name="liquidoingerido">Líquido ingerido</string>
+    <string name="adverliquidoingerido">El líquido ingerido es en ml</string>
+    <string name="nuevorecambio">Nuevo recambio</string>
+    <string name="mensajenuevorecambio">Añadir nuevo recambio</string>
+    <string name="horanovalida">Hora no valida</string>
+    <string name="drenadoinvalido">Drenado invalido</string>
+    <string name="ufinvalido">Uf invalido</string>
+    <string name="ingeridoinvalido">Líquido ingerido invalido</string>
+    <string name="ml">ml</string>
+    <string name="actualizando">Actualizando...</string>
+    <string name="antesdecomenzar">Antes de comenzar</string>
+    <string name="welcomea">Kidneys cuenta con 7 módulos principales, navega por el menú para acceder a ellos</string>
+    <string name="welcomeb">El primer módulo es tu perfil, personalizalo con los datos que a ti te interesan</string>
+    <string name="welcomec">En el segundo módulo encontrarás guías que te informan sobre procesos de dialisis etc...</string>
+    <string name="welcomed">En el tercer módulo encontrarás  la mayor parte de la información relacionada a alimentos que a ti te importa</string>
+    <string name="welcomee">En el cuarto módulo encontrarás las mejores recetas para pacientes con insuficiencia renal, así como algunas recetas que debes evitar</string>
+    <string name="welcomef">En el quinto módulo podras olvidarte del papel y anotar los resultados de tus recambios en el celular</string>
+    <string name="welcomeg">Con ayuda del sexto módulo podrás ubicar aquellos lugares que te pueden ser utilidad en algun momento</string>
+    <string name="welcomeh">Y por último pero no menos importante, el módulo de ayuda donde encontrarás las preguntas más habituales</string>
+    <string name="welcomei">Ahora que conoces lo fundamental qué te parece si comenzamos</string>
+    <string name="welcome">Kidneys es una aplicación móvil diseñada para pacientes de insuficiencia renal crónica (IRC) que requieren
+        de una guía para el manejo y cuidados especiales durante su proceso de diálisis peritoneal.
+        Está creada para que el usuario se familiarice con los términos de la enfermedad, así como las recomendaciones para una
+        mejor calidad de vida del paciente.</string>
+    <string name="textcontacto">
+        <![CDATA[
+        <html>
+    <body>
+<p>Si tienes dudas, puedes visitar el módulo de ayuda, donde encontraras información que puede ser de utilidad.</p>
+<p>Si después de eso aun tienes preguntas o sugerencias, no dudes en mandarnos un correo pulsando en el siguiente boton.</p>
+        </body>
+        </html>
+]]></string>
+    <string name="politica">
+        <![CDATA[
+        <html>
+    <body>
+      <h2>¿Qué hacemos con tu información?</h2>
+			<p>Cuando navegas en nuestra tienda, también recibimos de manera automática la dirección de protocolo de internet de tu c
+			omputadora (IP) con el fin de proporcionarnos información que nos ayuda a conocer acerca de su navegador y sistema operativo. Email marketing
+			(if applicable): Con tu permiso, podremos enviarte correos electrónicos acerca de nuestra tienda, nuevos productos y otras actualizaciones.</p>
+			<h2>Consentimiento</h2>
+			<p>¿Cómo obtienen mi consentimiento? Si te pedimos tu información personal por una razón secundaria, como marketing, te pediremos
+			directamente tu expreso consentimiento, o te daremos la oportunidad de negarte. ¿Cómo puedo anular mi consentimiento? Si luego de haber aceptado
+			cambias de opinión, puedes anular tu consentimiento para que te contactemos, por la recolección, uso o divulgación de tu información, en cualquier
+			momento, contactándonos a kidneysapp@gmail.com o escribiéndonos a: Kidneys.</p>
+        </body>
+        </html>
+]]></string>
+    <string name="about">
+        <![CDATA[
+        <html>
+    <body>
+<h2>¿Que es Kidneys?</h2>
+			<p>KIDNEYS es una aplicación móvil para el sistema operativo android, está diseñada para pacientes con Insuficiencia renal
+			crónica o para sus familiares, diseñada para aquellas personas que requieren ser auto responsables y/o se encuentren lejos de un centro médico
+			o que no puedan trasladarse hacia él, esta les permitirá consultar desde qué medidas tomar con base a los cuidados médicos del tratamiento de
+			insuficiencia renal que tengan, que alimentación es la adecuada para personas con este padecimiento, como ayudar a determinar si sus niveles no
+			son los correctos y hasta saber cómo cambiar su máquina de diálisis.</p>
+        </body>
+        </html>
+]]></string>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
+        </item>
+    </string-array>
+</resources>

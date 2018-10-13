@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_follow_follows_day"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@color/colorBlanco"
+    card_view:cardCornerRadius="4dp">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingDeleteFollowFollowsDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:src="@drawable/ic_delete"
+        app:backgroundTint="@color/colorBlanco"
+        app:borderWidth="0dp" />
+
+    <TextView
+        android:id="@+id/textViewHourFollowFollowsDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/alice"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Day"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorBlanco"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</android.support.v7.widget.CardView>

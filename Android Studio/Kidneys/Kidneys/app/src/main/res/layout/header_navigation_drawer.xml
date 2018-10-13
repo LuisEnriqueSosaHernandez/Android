@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/colorAzul">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fondo" />
+
+    <TextView
+        android:id="@+id/navPerfilTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAzul"
+        android:fontFamily="@font/alice"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/colorBlanco"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/navPerfilImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/colorBlanco"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/colorMarron"
+        app:civ_shadow_radius="10" />
+
+    <TextView
+        android:id="@+id/navPerfilName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:fontFamily="@font/alice"
+        android:paddingBottom="4dp"
+        android:text="Nombre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorBlanco"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</FrameLayout>
