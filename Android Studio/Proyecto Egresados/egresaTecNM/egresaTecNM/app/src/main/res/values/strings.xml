@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">EgresaTecNM</string>
+    <string name="facebook_app_id">1736185346686959</string>
+    <string name="fb_login_protocol_scheme">fb1736185346686959</string>
+    <string name="cancelacion">Operación cancelada</string>
+    <string name="conexion">Revisa tu conexión a internet</string>
+    <string name="cerrarsesion">Cerrar sesión</string>
+    <string name="descripcion">Logo EgresaTecNM</string>
+    <string name="menu_politica">Politica de privacidad</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="masopciones">Más opciones</string>
+    <string name="encuesta">Encuesta</string>
+    <string name="next">Siguiente</string>
+    <string name="back">Regresar</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="terminar">Terminar</string>
+    <string name="empleos">Ofertas de empleos</string>
+    <string name="erroremail">Requerimos de su email</string>
+    <string name="institucion">Institución</string>
+    <string name="estado">Estado</string>
+    <string name="tecnologico">Tecnológico</string>
+    <string name="carrera">Carrera</string>
+    <!--Politica-->
+    <string name="politica">
+        <![CDATA[
+        <html>
+    <head><h1>Política de privacidad y manejo de datos personales</h1></head>
+<body>
+    <p>En cumplimiento con lo establecido por la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental,
+    se informa de la política de privacidad y manejo de datos personales de esta aplicación.</p>
+    <p>Los datos solicitados en el módulos de contacto o cualquier otro tipo de registro colocado en el Portal Web de la Dirección General de Educación Superior Tecnológica,
+     únicamente serán utilizados para establecer comunicación con el usuario como respuesta a la petición o comentario realizado.</p>
+     <p>Asimismo, los datos que ingresen a los sistemas en línea no serán difundidos, distribuidos o comercializados salvo lo estrictamente señalado
+     en el art. 22 de la Ley Federal de Transparencia y Acceso a la Información Pública Gubernamental.</p>
+     <p>En caso que el usuario desee anular la información proporcionada a la base de datos, podrán solicitar la baja a través del correo electrónico:
+     webmaster@tecnm.mx o por escrito a la Dirección del Instituto Tecnológio de Veracruz,
+      ubicado en Miguel Ángel de Quevedo 2779, Colonia Formando Hogar, C.P. 91897, Veracruz, Ver. México.</p>
+      <p>Los comentarios o peticiones serán incluidos exclusivamente para informes estadísticos y dar seguimiento a los avances institucionales,
+       sin permitir identificar al individuo o usuario.</p>
+       <p>Los servicios y el contenido del Portal TecNM, están protegidos por la Ley de Derechos de Autor y no se puede copiar, modificar, interpretar,
+       desplegar o vender cualquier contenido que aparezca en o por medio de esta aplicación sin la autorización del Tecnológico Nacional de México.</p>
+       <p>El Portal TecNM se reserva el derecho de modificar las políticas de privacidad, con la finalidad de adaptar nuevos requerimientos legislativos, jurisprudenciales,
+       técnicos o por cualquier otro motivo que permita brindar mejores servicios y contenidos a los usuarios sin contravenir lo establecido en la Ley de Transparencia y
+       Acceso a la Información Pública.</p>
+       <p>Las presentes políticas de privacidad son parte de uso de esta aplicación y en consecuencia, la utilidad que el usuario pudiera tener de los servicios del Portal
+        TecNM implica haber leído, entendido y aceptado los términos antes expuestos. Si el usuario no estuviera de acuerdo con tales políticas, tendrá la opción de no
+        proporcionar ninguna información personal.</p>
+        <p>Para mayor información puede escribir a webmaster@tecnm.mx o comunicarse a los teléfonos: (229) 34-1500 ext. 116</p>
+        </body>
+        </html>
+]]>
+    </string>
+
+
+
+
+</resources>

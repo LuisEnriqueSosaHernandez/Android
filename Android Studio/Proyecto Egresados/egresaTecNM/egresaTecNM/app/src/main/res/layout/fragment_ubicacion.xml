@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lesh.egresatecnm.com.egresatecnm.FragmentRegistro.UbicacionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/ubicacionTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/institucion"
+        android:layout_gravity="left"
+        android:layout_margin="4dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+        android:id="@+id/UbicacionEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estado"
+        android:layout_gravity="left"
+        android:layout_margin="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/UbicacionTecnologico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tecnologico"
+            android:layout_gravity="left"
+            android:layout_margin="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerTecnologico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/UbicacionCarrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carrera"
+            android:layout_gravity="left"
+            android:layout_margin="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCarrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnNextUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/btnBackUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text="@string/back" />
+
+
+</FrameLayout>

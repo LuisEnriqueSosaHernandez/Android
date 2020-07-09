@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_perfil"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/perfil"></item>
+        <item
+            android:id="@+id/menu_encuesta"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/encuesta"></item>
+        <item
+            android:id="@+id/menu_empleos"
+            android:icon="@android:drawable/btn_star"
+            android:title="@string/empleos"></item>
+
+    </group>
+    <item android:title="@string/masopciones">
+        <menu>
+            <item
+                android:id="@+id/menu_politica"
+                android:icon="@android:drawable/ic_dialog_dialer"
+                android:title="@string/menu_politica"></item>
+            <item
+                android:id="@+id/menu_salir"
+                android:icon="@android:drawable/ic_delete"
+                android:title="@string/cerrarsesion"></item>
+        </menu>
+    </item>
+</menu>

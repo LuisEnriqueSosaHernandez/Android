@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "764511573300",
+    "firebase_url": "https://egresatecnm-e2a83.firebaseio.com",
+    "project_id": "egresatecnm-e2a83",
+    "storage_bucket": "egresatecnm-e2a83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764511573300:android:5d5f6e64c55ab4d0",
+        "android_client_info": {
+          "package_name": "lesh.egresatecnm.com.egresatecnm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764511573300-rr9pg3bkeu328279194i9ufroduql2tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lesh.egresatecnm.com.egresatecnm",
+            "certificate_hash": "2dd6b791b992df12abc4a710ff55346baaf2e0bd"
+          }
+        },
+        {
+          "client_id": "764511573300-ku000aqhgdm7kgk77vlvf2uuhbo0ntsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmtEAP0qTQHkNnZiZV8z6IzJIwMAZou1I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764511573300-ku000aqhgdm7kgk77vlvf2uuhbo0ntsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

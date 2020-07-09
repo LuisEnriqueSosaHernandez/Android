@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lesh.egresatecnm.com.egresatecnm.Activities.inicioActivity">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/loginButton"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+         />
+
+    <ImageView
+        android:id="@+id/ImgLogoEgresaTecNM"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/ImgLogoEscolarEgresaTecNM"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_gravity="top"
+        android:src="@drawable/logoescolar"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+         />
+</FrameLayout>
