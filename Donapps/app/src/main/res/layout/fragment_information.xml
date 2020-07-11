@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.LoginActivity"
+    android:orientation="vertical"
+    >
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="3dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:src="@drawable/logo2"/>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card">
+
+        <TextView
+            android:id="@+id/txtMision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Misión"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vision"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/txtGoals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Objetivos"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

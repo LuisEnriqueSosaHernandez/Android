@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Donapps</string>
+
+    <string name="txt1">
+        ¿ Qué es la sangre ?
+    </string>
+
+    <string name="txt2">
+        Es un compuesto acuoso formado por glóbulos
+        rojos, blancos y por plaquetas llamadas plasma.
+    </string>
+
+    <string name="txt3">
+        ¿ Qué es donar ?
+    </string>
+
+    <string name="txt4">
+        Es un acto humanitario que consiste en entregar
+        algo de forma voluntaria sin esperar premio o
+        recompensa alguna.
+    </string>
+
+    <string name="txt5">
+        ¿ Qué es la donación de sangre ?
+    </string>
+
+    <string name="txt6">
+        Es un proceso que consiste en extraer un aproximado
+        de 450 ml. de tu sangre, puede durar entre 8 y 15 minutos.
+    </string>
+
+
+    <string name="mision">
+        Mision
+    </string>
+
+    <string name="mision_detalle">
+        Ser una aplicación movil accesible y amigable,
+        tanto para donadores como para pacientes, en
+        donde la busqueda de donantes sea rápida y segura.
+    </string>
+
+    <string name="vision">
+        Visión
+    </string>
+
+    <string name="vision_detalle">
+        Ser una aplicacion móvil que sea reconocida y usada
+        a nivel mundial, de manera que la tasa de muertes
+        por falta de donadores de sangre disminuya conciderablementec.
+    </string>
+
+
+    <string name="objetivo">
+        Objetivo
+    </string>
+
+    <string name="objetivo_detalle">
+        Diseñar e implementar una aplicación móvil donde se puedan poner
+        en contacto un candidato con el paciente o familiar para el
+        proceso de donación de sangre o plaquetas y así poder salvar
+        una vida.
+    </string>
+
+    <string name="default_status">Salvemos una vida hoy</string>
+
+</resources>

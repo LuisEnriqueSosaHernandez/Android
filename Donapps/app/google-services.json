@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "501876120809",
+    "firebase_url": "https://donapps-a0baa.firebaseio.com",
+    "project_id": "donapps-a0baa",
+    "storage_bucket": "donapps-a0baa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501876120809:android:861bcb289bbe9312",
+        "android_client_info": {
+          "package_name": "itver.donapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501876120809-e5ui1njg4h5mj43rshj0ro4lsit9fcro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "itver.donapps",
+            "certificate_hash": "51e0985ae88f7eae474ef7e720b5b2b2655d0cc2"
+          }
+        },
+        {
+          "client_id": "501876120809-osf3tu0jb4h94bfr6eoe156cusipip6u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYEyePt54HTboTMBE39vI2VidFd3gRfAE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501876120809-osf3tu0jb4h94bfr6eoe156cusipip6u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
